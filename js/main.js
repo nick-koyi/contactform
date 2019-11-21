@@ -1,4 +1,5 @@
 // Your web app's Firebase configuration
+    // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBrE3U45OwbEFMpWqjGJHVDfzknWIKx6CA",
     authDomain: "contactform-fc94a.firebaseapp.com",
@@ -9,6 +10,7 @@
     appId: "1:182776329774:web:3d19c00b1ac1adc9dad1bf",
     measurementId: "G-V6XJH68ZKX"
   };
+  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   
@@ -30,6 +32,18 @@ var message = getInputVal('message');
  
 // save message
 saveMessage(firstName, lastName, email, message);
+
+// show alert
+document.querySelector('.alert').style.display = 'block';
+
+//Hide alert 3 seconds
+setTimeout(function(){
+	document.querySelector('.alert').style.display = 'none';
+},3000);
+
+//clear form
+document.getElementById('contactForm').reset();
+
 }
 
 //function to get form values

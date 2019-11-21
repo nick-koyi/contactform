@@ -10,7 +10,7 @@
 body,
 input,
 button {
- font-family: 'Roboto', sans-serif;
+ font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -99,12 +99,12 @@ input {
 	font-weight: 500;
 	padding: .8em;
 	background: #EDF7F3;
-	border: 2px solid #EDF7F3;
-	outline: none;
+	border-style: hidden;
 }
 
 #message:focus {
 	background: #fff;
+	border-color: #7A96A8;
 	transition: border-color .4s, background-color .4s;
 }
 
@@ -114,9 +114,9 @@ input:focus {
 	transition: border-color .4s, background-color .4s;
 }
 
-input:invalid {
+/*input:invalid {
   border: 3px solid green;
-}
+}*/
 
 button {
 	color: #fff;
@@ -137,4 +137,12 @@ button:hover {
 .container {
 	margin: auto;
 	max-width: 680px;
+}
+
+.alert {
+padding: 10px;
+background: green;
+color: #ffffff;
+margin-top: 10px;
+display: none; 
 }

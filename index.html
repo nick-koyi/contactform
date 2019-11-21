@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NK </title>
+    <title>Nick Designs</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   <body>
@@ -16,6 +17,7 @@
     <header>
       <img src="img/favicon.png" alt="Nicholas Koyi">
       <h1>Nicholas Koyi Designs</h1>
+	  <h3>Contact Form</h3>
     </header>
 
     <form id="contactForm" >
@@ -24,26 +26,32 @@
         <legend>Basic Info</legend>
 
         <label for="name" id='nameLabel'>*First Name:</label>
-        <input type="text" id="firstName" name="firstName">
+        <input type="text" id="firstName" name="firstName" required>
 		
-		<label for="name" id='nameLabel'>*Last Name:</label>
+		<label for="name" id='nameLabel'>Last Name:</label>
         <input type="text" id="lastName" name="lastName">
 
         <label for="mail" id='mailLabel'>*Email:</label>
-        <input type="text" id="email" name="email">
+        <input type="email" id="email" name="email" required>
 		
-		<label for="message" id='messageLabel'>*Message:</label>
+		<label for="message" id='messageLabel'>Message:</label>
         <textarea class="form-control" name="message" id="message"></textarea>
 
       </fieldset>
 
+<div class="alert">Your message has been sent</div>
+
       <button type="submit">Submit</button>
+	  
     </form>
+	
 
 	</div>
 
 <!--Javascript Files-->
-	<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
 	<script src="js/main.js"></script>
 	
   </body>
