@@ -1,0 +1,140 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+body,
+input,
+button {
+ font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font: 1em/1.5;
+  color: #22233D;
+	background: /*#3EC144*/#ffffff;
+}
+
+header {
+	text-align: center;
+}
+
+img {
+	width: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+/* =================================
+  Form Element Styles
+==================================== */
+
+form {
+	padding: .875em 1.875em 1.875em;
+	background: #C4EDDC;
+}
+
+fieldset,
+legend,
+button {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+legend,
+button {
+	font-size: 1.25em;
+}
+
+legend {
+	font-weight: 500;
+	padding-top: .5em;
+	border-top: 2px solid #22233D;
+	margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+	width: 100%;
+}
+
+label {
+	color: #000;
+	display: block;
+	margin-bottom: .5em;
+}
+
+input,
+select {
+	margin-bottom: 1.125em;
+}
+
+input {
+	font-size: 1em;
+	font-weight: 500;
+	padding: .8em;
+	background: #EDF7F3;
+	border: 2px solid #EDF7F3;
+	outline: none;
+}
+
+#message {
+	font-size: 1em;
+	font-weight: 500;
+	padding: .8em;
+	background: #EDF7F3;
+	border: 2px solid #EDF7F3;
+	outline: none;
+}
+
+#message:focus {
+	background: #fff;
+	transition: border-color .4s, background-color .4s;
+}
+
+input:focus {
+	background: #fff;
+	border-color: #7A96A8;
+	transition: border-color .4s, background-color .4s;
+}
+
+input:invalid {
+  border: 3px solid green;
+}
+
+button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #7A96A8;
+	margin: 1.25em 0 .5em;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #22233D;
+}
+
+/* =================================
+  Page Styles
+==================================== */
+
+.container {
+	margin: auto;
+	max-width: 680px;
+}
